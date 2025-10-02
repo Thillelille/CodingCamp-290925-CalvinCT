@@ -10,9 +10,9 @@ function addToDo()
 {
     const todoInput = document.getElementById
     const todoDate = document.getElementById
-    console.log("ass")
+    console.log("aaa")
 }
-function deleteddToDo()
+function deleteToDo()
 {
     
 }
@@ -22,5 +22,5 @@ function filterToDo()
 }
 function filterToDo()
 {
-    if (!todo)
+
 }
