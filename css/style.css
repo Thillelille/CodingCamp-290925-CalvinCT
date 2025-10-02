@@ -1,9 +1,46 @@
+html *
+{
+   font-size: 1em !important;
+   color: #black !important;
+   font-family: Orbitron !important;
+   
+}
+body
+{    
+    justify-items: center;
+    align-items: center;
+    padding: 9px;
+    margin: 10px;
+}
+
 header
 {
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
     justify-items: center;
 }
 main 
 {
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
     height:100vh;
     justify-items: center;
+    padding: 9px;
+    margin: 10px;
+}
+
+table
+{
+    border: 2px solid red;
+   
+}
+th
+{
+    border: solid;
+    border-width: 1px;
+
+    padding: 9px;
 }
