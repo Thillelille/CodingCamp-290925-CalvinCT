@@ -9,32 +9,39 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>To-Do-List</h1> <!-- Judul -->
+    <header class="border rounded bg-blue-500">
+        <!-- Judul -->
+        <h1>To-Do-List</h1> 
     </header>
-    <main>
-        <!-- Input data -->
+    <main class="w-200">
+        <!-- Form Todo -->
         <section>
-            <form id="TDFList">
-                <input id="datatext" class="border p--[8px] max-w-sm">
-                <input type="date" class="border p--[8px]">
+            <form id="todo-form">
+                <input type="text" class="border rounded p-[8px]" id="todo-input" placeholder="Enter your todo..."
+                    required>
+                <input type="date" class="border rounded p-[8px]" id="todo-date" required>
+                <button type="button" onclick="addTodo()" class="bg-blue-500 rounded text-white p-[8px]">Add +</button>
             </form>
         </section>
-        <section>
-            <table id="table" class="border rounded-sm">
-                <tr>
-                    <th>List</th>
-                    <th>Date</th>
-                    <th>Checklist</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+
+        <!-- Action Buttons -->
+        <section class="mt-[16px] flex gap-2">
+            <button class="bg-red-500 rounded text-white p-[8px]" onclick="deleteAll()">Delete All</button>
+            <button class="bg-green-500 rounded text-white p-[8px]" onclick="filterTodo()">Filter</button>
+        </section>
+
+        <!-- List Todo -->
+        <section class="mt-[16px]">
+            <ul id="todo-list" class="mt-4">
+                <!-- Todo items will be appended here -->
+                <p class="text-center text-gray-500">No todos yet. Add one above!</p>
+            </ul>
         </section>
     </main>
+
+    <footer class="bg-white border p-3 rounded w-full">
+         <p class="self-center">&copy; 2025 Calvin To-Do-List-App</p>
+    </footer>
 
  
 

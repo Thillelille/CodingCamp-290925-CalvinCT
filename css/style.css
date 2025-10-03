@@ -1,12 +1,13 @@
 html *
 {
-   font-size: 1em !important;
-   color: #black !important;
+   
+   color: black !important;
    font-family: Orbitron !important;
    
 }
 body
 {    
+
     justify-items: center;
     align-items: center;
     padding: 9px;
@@ -15,6 +16,8 @@ body
 
 header
 {
+
+    font-size: 30px;
     border: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -24,7 +27,7 @@ header
 main 
 {
     border: solid;
-    border-width: 1px;
+    border-width: 5px;
     border-radius: 10px;
     height:100vh;
     justify-items: center;
